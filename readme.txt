@@ -1,6 +1,8 @@
 How to add a FORM to wordpress that works with Hubspot's CRM.
 *No Zapier required*
 
+[[https://github.com/steveseguin/Simple-Wordpress-Hubspot-Form-Submission-Plugin/raw/master/screenshot1.png|alt=screesnhot]]
+
 # How to use:
 
 Create a Wordpress page and put the HTML code in it.
