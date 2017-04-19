@@ -1,9 +1,9 @@
-How to add a FORM to wordpress that works with Hubspot's CRM.
-*No Zapier required*
+#How to add a FORM to wordpress that works with Hubspot's CRM.
+##*No Zapier required*
 
-![Screenshot](screenshot1.png)
 
-# How to use:
+
+## How to use:
 
 Create a Wordpress page and put the HTML code in it.
 
@@ -16,6 +16,8 @@ Modify the PHP file with a HubSpot API key ---  you need to get Hubspot and crea
 Zip up this folder with just the PHP code in it and upload it to Wordpress as a plugin. (or deploy to the plugin folder via FTP, etc)
 
 Configure the HTML/PHP to extend the fields capture. Currently it captures first name, last name, email, and optionally, telelphone. Extending it will require some very simple programming.
+
+![Screenshot](screenshot1.png)
 
 
 
