@@ -1,5 +1,6 @@
-# How to add a FORM to wordpress that works with Hubspot's CRM.
-#### *No Zapier or $$ required*
+# add a FORM to wordpress that works with Hubspot's CRM.
+#### *No Zapier, marketing addons, Paid plugins, or $$ required*
+Add contacts via a sign up form easily to wordpress that works with Hubspot's CRM -- leverage Hubspot on the cheap.
 
 
 
