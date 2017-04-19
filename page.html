@@ -1,0 +1,42 @@
+<div class="container-form">  
+  <form id="contact" action="" onsubmit="validateMyForm(this); event.preventDefault();"  method="post">
+    <h3>Contact Us</h3>
+    <h4>Drop us a line for more information</h4>
+    <fieldset>
+      <input placeholder="Your First Name" type="text" tabindex="1"  autofocus required name='firstname'>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Last Name" type="text" tabindex="2"  autofocus required name='lastname'>
+    </fieldset>
+     <fieldset>
+      <input placeholder="Your Email Address" type="email" tabindex="3" required name='email'>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Phone Number (optional)" type="tel" tabindex="4" name='telephone'>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+  </form>
+</div>
+
+<script type="text/javascript">
+function validateMyForm(formDataRaw){
+  console.log(formDataRaw);
+  var formData = new FormData( formDataRaw );
+  loadDoc(formData);
+  return true;
+}
+function loadDoc(formData) {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      console.log(this.responseText);
+      if (this.responseText=="200"){
+          document.getElementById("contact").innerHTML = 'Submitted. Thank you.';} else if (this.responseText=="409"){document.getElementById("contact").innerHTML = 'Submitted. Thank you.';} else {alert("There was an error processing your submission.");}
+    } 
+  };
+  xhttp.open("POST", "../../../wp-json/hscontact/v1/create", true);
+  xhttp.send(formData);
+}
+</script>
